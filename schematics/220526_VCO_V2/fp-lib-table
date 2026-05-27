@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "AudioJacks") (type "KiCad") (uri "C:/Users/Ramon/Proton Drive/ramon.esteve/My files/KICAD/AudioJacks-main/AudioJacks.pretty") (options "") (descr ""))
+)
