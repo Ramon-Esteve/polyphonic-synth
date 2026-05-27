@@ -1,0 +1,6 @@
+[submodule "tinyusb"]
+	path = tinyusb
+	url = https://github.com/hathach/tinyusb.git
+[submodule "firmware/midi_to_cv/tinyusb"]
+	path = firmware/midi_to_cv/tinyusb
+	url = https://github.com/hathach/tinyusb.git
