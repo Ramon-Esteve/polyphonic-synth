@@ -1,0 +1,24 @@
+# Build
+build/
+cmake-build-*/
+Debug/
+Release/
+
+# CLion / IDEs
+.idea/
+*.iml
+
+# CubeMX backups
+*.ioc.bak
+.mxproject
+
+# Artifacts
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# OS
+.DS_Store
+Thumbs.db
