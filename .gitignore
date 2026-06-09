@@ -22,3 +22,19 @@ Release/
 # OS
 .DS_Store
 Thumbs.db
+
+# Videos
+*.mov
+*.MOV
+
+# KiCad generated / local files
+*-backups/
+fp-info-cache
+*.kicad_prl
+*.lck
+\#auto_saved_files#
+*~
+
+# KiCad Local History plugin (nested git repo -- not tracked)
+.history/
+_restore_backup_*/

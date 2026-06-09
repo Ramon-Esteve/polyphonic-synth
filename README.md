@@ -41,6 +41,25 @@ All analog circuits are prototyped on breadboard. The Nucleo board handles MIDI 
 - **Prototyping:** Breadboard (switched from stripboard after killing two ICs soldering — lesson learned)
 - **DAC output stage:** Op-amp scaling circuit to convert Nucleo's 0–3.3V DAC to 0–5V+ for 1V/oct
 
+## VCO V2 — Bring-Up & Verification (June 2026)
+
+The first custom VCO PCB revision (`220526_VCO_V2`, JLCPCB) has passed full bring-up and verification.
+
+**Verified:**
+- Power integrity: rails at ±11.8/−11.9 V, both wire-bridged traces (−12V rail, R7 network) confirmed functional (0.4 Ω continuity, voltage-verified under load)
+- Full signal chain: saw core → buffer → AC coupling → ×3.13 gain stage → SAW out (~10 Vpp), comparator → divider → PULSE out (8.88 Vpp)
+- PWM: full duty sweep functional, clean latch behaviour only at threshold extremes (by design)
+- Frequency range: **~5 Hz to ~49.8 kHz** (full audio range + LFO territory)
+- **V/oct tracking: ~10 cents over 2 octaves** after trimming ADJ_TUNE1, verified via Voxengo SPAN — better than the breadboard baseline (~14 ct/oct). Residual error will be handled by the planned STM32 autotune routine.
+
+**Known issues → fixed in V0.2:**
+- D4 LED footprint connects to the CV summing node instead of the buffered SAW output (not populated on V2)
+- Two manufacturing trace defects bridged with wire (new revision removes bridges)
+- Expo converter (BC548/BC558 discrete pair) to be replaced with monolithic matched pair (BC847BS) + tempco resistor
+
+Full measurement protocol: [`docs/bringup_vco_v2/bringup_checklist_VCO_V2.md`](docs/bringup_vco_v2/bringup_checklist_VCO_V2.md)
+Test equipment: Tektronix 2225, TOOLTOP ET828 Pro, PeakTech 6225A, RME Fireface + Voxengo SPAN
+
 ## Repository Structure
 
 ```
