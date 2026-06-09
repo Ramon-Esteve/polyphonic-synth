@@ -62,7 +62,7 @@ Test equipment: Tektronix 2225, TOOLTOP ET828 Pro, PeakTech 6225A, RME Fireface 
 
 | VCO V2 PCB | Square wave output on scope |
 |---|---|
-| ![VCO V2 PCB](docs/bringup_vco_v2/photos/IMG_1948.jpeg) | ![Square wave output](docs/bringup_vco_v2/photos/IMG_1969.jpeg) |
+| ![VCO V2 PCB](docs/bringup_vco_v2/photos/IMG_1948.jpeg) |  ![VCO V2 PCB](docs/bringup_vco_v2/photos/IMG_1948.jpeg) | <img src="docs/bringup_vco_v2/photos/IMG_1969.jpeg" width="600">  |
 
 ## Repository Structure
 
