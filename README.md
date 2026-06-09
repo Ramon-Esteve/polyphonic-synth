@@ -60,9 +60,9 @@ The first custom VCO PCB revision (`220526_VCO_V2`, JLCPCB) has passed full brin
 Full measurement protocol: [`docs/bringup_vco_v2/bringup_checklist_VCO_V2.md`](docs/bringup_vco_v2/bringup_checklist_VCO_V2.md)
 Test equipment: Tektronix 2225, TOOLTOP ET828 Pro, PeakTech 6225A, RME Fireface + Voxengo SPAN
 
-| Saw core on scope (Tek 2225) | Frequency range max ~49.8 kHz (ET828) |
+| VCO V2 PCB (220526_VCO_V2) | Square wave output on scope (Tek 2225) |
 |---|---|
-| ![Saw core scope trace](docs/bringup_vco_v2/photos/IMG_1948.jpeg) | ![Frequency range max](docs/bringup_vco_v2/photos/IMG_1969.jpeg) |
+| ![VCO V2 PCB](docs/bringup_vco_v2/photos/IMG_1948.jpeg) | ![Square wave output](docs/bringup_vco_v2/photos/IMG_1969.jpeg) |
 
 ## Repository Structure
 
