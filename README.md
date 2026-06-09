@@ -18,6 +18,7 @@ All analog circuits are prototyped on breadboard. The Nucleo board handles MIDI 
 > **Phase 1 — VCO + MIDI pitch control** *(in progress)*
 
 - [x] VCO built and working on breadboard
+- [x] VCO on dedicated PCB (`220526_VCO_V2`) — validated and tested under real circuit conditions
 - [ ] Nucleo DAC output verified
 - [ ] Op-amp CV scaling circuit (0–3.3V → 0–5V)
 - [ ] MIDI input (USB or UART @ 31250 baud)
